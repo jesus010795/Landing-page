@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,9 +13,9 @@
                 <h2 class="font-extrabold text-3xl ">Landing.</h2>
             </a>
             <div class="space-x-4 ">
-                <a href="">Inicio</a>
-                <a href="">habilidades</a>
-                <a href="">Proyectos</a>
+                <a href="#">Inicio</a>
+                <a href="#skills">habilidades</a>
+                <a href="#projects">Proyectos</a>
             </div>
             
         </nav>
@@ -30,7 +30,7 @@
         </section>
     </header>
     <main>
-        <section class="wrapper py-20 text-center">
+        <section class="wrapper py-20 text-center" id="skills">
             
             <h2 class="text-3xl font-bold mb-10">Nuestras habilidades 👇</h2>
             <div class="grid gap-8 max-w-md mx-auto">
@@ -58,7 +58,7 @@
             </div>
         </section>
 
-        <section class="bg-slate-50 py-10">
+        <section class="bg-slate-50 py-10" id="projects">
             <div class="wrapper text-center">
                 <h2 class="font-bold text-3xl">Nuestro trabajo!</h2>
                 <p class="mt-10 font-light text-lg text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae debitis in non, voluptatibus dolorum et nesciunt ad quaera.</p>
@@ -96,6 +96,27 @@
             </form>
         </section>
     </main> 
+    <footer class="bg-blue-100">
+        <div class="wrapper py-20">
+            <section class="flex flex-col text-center gap-6 border-b-2 border-slate-400 pb-8">
+                <h2 class="text-2xl font-bold">Landing.</h2>
+                <p class="text-slate-600">correo@micorreo.com</p>
+            </section>
+            <section class="flex flex-col text-center gap-4 pt-8">
+                <ul class="flex justify-center gap-4 text-slate-900">
+                    <li><a href="#"> Inicio </a></li>
+                    <li><a href="#skills"> Habilidades </a></li>
+                    <li><a href="#projects"> Proyectos </a></li>
+                </ul>
+                <div class="grid grid-flow-col auto-cols-max justify-center gap-6">
+                    <a href=""> <img class="w-7" src="./assets/facebook.svg" alt=""></a>
+                    <a href=""> <img class="w-7" src="./assets/github.svg" alt=""></a>
+                    <a href=""> <img class="w-7" src="./assets/twitter.svg" alt=""></a>
+                </div>
+            </section>
+           
+        </div>
+    </footer>
     
 </body>
 </html>
