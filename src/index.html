@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="./css/output.css">
 </head>
 <body>
-    <header class="bg-blue-500 min-h-[600px]">
-        <nav class=" wrapper py-4 text-white grid gap-6 place-items-center ">
+    <header class="bg-blue-500">
+        <nav class=" wrapper py-4 text-white grid gap-6 place-items-center md:grid-flow-col md:justify-between">
             <a href="">
-                <h2 class="font-extrabold text-3xl ">Landing.</h2>
+                <h2 class="font-extrabold text-3xl md:text-4xl">Landing.</h2>
             </a>
             <div class="space-x-4 ">
                 <a href="#">Inicio</a>
@@ -20,9 +20,9 @@
             
         </nav>
 
-        <section class="wrapper py-14 flex flex-col items-center gap-12">
-            <img src="./assets/ilustration.svg" alt="Ilustracion" class="max-w-lg w-full">
-            <div class="text-white space-y-6 text-center">
+        <section class="wrapper py-14 flex flex-col items-center gap-12 min-h-[600px] md:flex-row">
+            <img src="./assets/ilustration.svg" alt="Ilustracion" class="max-w-lg w-full md:w-2/5">
+            <div class="text-white space-y-6 text-center max-w-lg md:w-3/5 md:text-left">
                 <h1 class="text-3xl font-bold">Hola mi nombre es Jesus. Sera un placer ayudarte</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis officia veritatis in quasi inventore, numquam et dolor officiis reprehenderit.  enim eligendi doloribus!</p>
                 <a href="" class="inline-block bg-slate-700 py-4 px-8 font-bold rounded-xl">Contactame ahora!</a>
@@ -33,7 +33,7 @@
         <section class="wrapper py-20 text-center" id="skills">
             
             <h2 class="text-3xl font-bold mb-10">Nuestras habilidades 👇</h2>
-            <div class="grid gap-8 max-w-md mx-auto">
+            <div class="grid gap-8 max-w-md mx-auto lg:grid-flow-col lg:max-w-none auto-cols-fr">
                 <article class="space-y-3">
                     <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" class="fill-orange-700 w-20 mx-auto"><path d="M4.136 3.012h15.729l-1.431 16.15-6.451 1.826-6.414-1.826-1.433-16.15zm5.266 7.302-.173-2.035 7.533.002.173-1.963-9.87-.002.522 5.998h6.835l-.243 2.566-2.179.602-2.214-.605-.141-1.58H7.691l.247 3.123L12 17.506l4.028-1.08.558-6.111H9.402v-.001z"></path></svg>
                     <h3 class="text-slate-900 text-xl font-bold">HTML5 + Figma</h3>
@@ -61,20 +61,20 @@
         <section class="bg-slate-50 py-10" id="projects">
             <div class="wrapper text-center">
                 <h2 class="font-bold text-3xl">Nuestro trabajo!</h2>
-                <p class="mt-10 font-light text-lg text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae debitis in non, voluptatibus dolorum et nesciunt ad quaera.</p>
+                <p class="mt-10 font-light text-lg text-slate-500 max-w-md mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae debitis in non, voluptatibus dolorum et nesciunt ad quaera.</p>
 
-                <div class="mt-12 grid gap-12">
-                    <article class="w-4/5 mx-auto space-y-5">
+                <div class="mt-12 grid gap-12 auto-cols-fr lg:grid-flow-col">
+                    <article class="w-4/5 mx-auto space-y-5 max-w-sm">
                         <img class="rounded-2xl aspect-square object-cover" src="./assets/welder.png" alt="">
                         <h3 class="font-medium text-2xl">Welding</h3>
                         <p class="font-light text-md text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </article>
-                    <article class="w-4/5 mx-auto space-y-5">
+                    <article class="w-4/5 mx-auto space-y-5 max-w-sm">
                         <img class="rounded-2xl aspect-square object-cover" src="./assets/tadequipo.jpg" alt="">
                         <h3 class="font-medium text-2xl">Bowl Feeder</h3>
                         <p class="font-light text-md text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </article>
-                    <article class="w-4/5 mx-auto space-y-5">
+                    <article class="w-4/5 mx-auto space-y-5 max-w-sm">
                         <img class="rounded-2xl aspect-square object-cover" src="./assets/bowltad.jpg" alt="">
                         <h3 class="font-medium text-2xl">Bowl feeder</h3>
                         <p class="font-light text-md text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -85,12 +85,12 @@
 
         </section>
 
-        <section class="wrapper py-20 grid gap-12">
-            <div>
+        <section class="wrapper py-20 grid gap-12 auto-cols-fr md:grid-flow-col items-center">
+            <div class="">
                 <h2 class="font-bold text-2xl">Dame tu correo y te contactare a la brevedad.</h2>
                 <p class="font-light text-slate-600 text-md mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus commodi fuga, quam ipsa ullam quisquam error cum, accusamus laborum aliquam esse quaerat.</p>
             </div>
-            <form action="" class="grid gap-6">
+            <form action="" class="grid gap-6 ">
                 <input class="border border-slate-900 p-3 rounded-lg" type="email" name="" id="" placeholder="hola@ejemplo.com">
                 <input class="bg-orange-500 text-white py-3 px-10 rounded-lg" type="submit" value="Contactame!">
             </form>
@@ -98,7 +98,7 @@
     </main> 
     <footer class="bg-blue-100">
         <div class="wrapper py-20">
-            <section class="flex flex-col text-center gap-6 border-b-2 border-slate-400 pb-8">
+            <section class="flex flex-col text-center gap-6 border-b-2 border-slate-400 pb-8 md:flex-row md:justify-between">
                 <h2 class="text-2xl font-bold">Landing.</h2>
                 <p class="text-slate-600">correo@micorreo.com</p>
             </section>
